@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Ahmed\Codes\HTML\VS Code\style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+<style>
+    @media only screen and (max-width: 941px) 
+{
+
+    div.maindiv1 {
+        background-color: #316DC3;
+        min-width: fit-content;
+        min-height: 30px;
+        width: auto;
+        text-align: center;
+    }
+    li.headerlistcomponents {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+    li.headerboxesli {
+        display: inline-block;
+        padding: 5px 5px;
+        vertical-align: middle;
+    }
+    span.headerboxes {
+        border: 1px solid yellow;
+        padding: 5px 5px;
+        display: inline-block;
+        color: white;
+        vertical-align: middle;
+    }
+
+    .homepage-div-first-row-grid {
+        display: none;
+    }
+    .menu-bar-div-logo-sb, .menu-bar-ul-logo-sb, .menu-bar-img-logo-sb {
+        display: auto;
+        margin: 0px;
+        padding: 0px;
+        vertical-align: middle;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu-bar-img-logo-sb {
+        width: 50%;
+        height: 100%;
+    }
+    .menu-bar-div-home-sb, .menu-bar-ul-home-sb, .menu-bar-li-home-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-about-sb, .menu-bar-ul-about-sb, .menu-bar-li-about-sb {
+        display: block;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-saylaniservices-sb, .menu-bar-ul-saylaniservices-sb, .menu-bar-li-saylaniservices-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-futureprojects-sb, .menu-bar-ul-futureprojects-sb, .menu-bar-li-futureprojects-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-media-sb, .menu-bar-ul-media-sb, .menu-bar-li-media-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-news-sb, .menu-bar-ul-news-sb, .menu-bar-li-news-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-donations-sb, .menu-bar-ul-donations-sb, .menu-bar-li-donations-sb {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .about-menu-ul-sb {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+    }
+    .about-menu-li-sb {
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+        padding-left: 20px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        list-style: none;
+    }
+    .about-menu-a-sb {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    div ul li.menu-bar-li-about-sb:hover ul.about-menu-ul-sb {
+        display: block;
+        overflow: visible;
+        z-index: 0.5;
+    }
+    .saylani-services-menu-ul-sb {
+        margin: 0px;
+        padding: 0px;
+        line-height: 40px;
+        list-style: none;
+        display: none;
+        padding-top: 20px;
+    }
+    .saylani-services-menu-li-sb {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        list-style: none;
+    }
+    .education-menu-ul-sb {
+        margin: 0px;
+        margin-top: -0.3vh;
+        padding: 0px;
+        list-style: none;
+        display: none;
+    }
+    .education-menu-li-saylani-mass-training-sb, .education-menu-li-saylani-incubator-sb, .education-menu-li-green-house-sb {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        background-color: #FFE299;
+        border-radius: 10px;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .saylani-mass-training-menu-ul-sb {
+        margin: 0px;
+        margin-top: -0.4vh;
+        padding: 0px;
+        list-style: none;
+        display: none;
+    }
+    .saylani-mass-training-menu-li-smit-programs-sb, .saylani-mass-training-menu-li-faculty-sb, .saylani-mass-training-menu-li-result-sb, .saylani-mass-training-menu-li-entry-test-schedule-sb {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid darkcyan;
+        background-color: #CCEDFF;
+        border-radius: 10px;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .saylani-services-menu-a-sb, .education-menu-a-saylani-mass-training-sb, .saylani-mass-training-menu-a-smit-programs-sb, .saylani-mass-training-menu-a-faculty-sb-sb, .saylani-mass-training-menu-a-result-sb, .saylani-mass-training-menu-a-entry-test-schedule-sb, .education-menu-a-saylani-incubator-sb, .education-menu-a-green-house-sb {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    div ul li.menu-bar-li-saylaniservices-sb:hover ul.saylani-services-menu-ul-sb {
+        display: block;
+    }
+    li.saylani-services-menu-li-sb:hover ul.education-menu-ul-sb {
+        display: inline;
+    }
+    li.education-menu-li-saylani-mass-training-sb:hover ul.saylani-mass-training-menu-ul-sb {
+        display: inline;
+    }
+    .future-projects-menu-ul-sb {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+    }
+    .future-programs-menu-li-sb {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid crimson; min-width: 11vw;
+        list-style: none;
+    }
+    .future-programs-menu-a-sb, .menu-bar-li-futureprojects-sb {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    li.menu-bar-li-futureprojects-sb:hover ul.future-projects-menu-ul-sb {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+    }
+    .donations-menu-ul-sb {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+    }
+    .donations-menu-li-sb {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .donations-menu-a-sb, .menu-bar-a-donations-sb {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    li.menu-bar-li-donations-sb:hover ul.donations-menu-ul-sb {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+    }
+div.upcoming-projects-div {
+    display: block !important;
+    margin: auto;
+    float: none !important;
+}
+    div.upcoming-events-div {
+        display: block !important;
+        margin: auto;
+        float: none;
+    }
+
+} 
+    
+.img-fullwidth {
+    width: 200px;
+    padding: 5px;
+}
+.flex-container>div {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+div.what-we-do div {
+
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.what-we-do-sub-div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 940px) 
+
+{
+
+    div.maindiv1 {
+        background-color: #316DC3;
+        min-width: fit-content;
+        min-height: 30px;
+        width: auto;
+        text-align: center;
+    }
+    li.headerlistcomponents {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+    li.headerboxesli {
+        display: inline-block;
+        padding: 5px 5px;
+        vertical-align: middle;
+    }
+    span.headerboxes {
+        border: 1px solid yellow;
+        padding: 5px 5px;
+        display: inline-block;
+        color: white;
+        vertical-align: middle;
+    }
+    #menu-button {
+        display: none;
+    }
+    .menu-bar-div-logo, .menu-bar-ul-logo, .menu-bar-img-logo {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        vertical-align: middle;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu-bar-img-logo {
+        width: 50%;
+        height: 100%;
+    }
+    .menu-bar-div-home, .menu-bar-ul-home, .menu-bar-li-home {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-about, .menu-bar-ul-about, .menu-bar-li-about {
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-saylaniservices, .menu-bar-ul-saylaniservices, .menu-bar-li-saylaniservices {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-futureprojects, .menu-bar-ul-futureprojects, .menu-bar-li-futureprojects {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-media, .menu-bar-ul-media, .menu-bar-li-media {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-news, .menu-bar-ul-news, .menu-bar-li-news {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .menu-bar-div-donations, .menu-bar-ul-donations, .menu-bar-li-donations {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 1vw;
+    }
+    .about-menu-ul {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+    }
+    .about-menu-li {
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
+        padding-left: 20px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        list-style: none;
+    }
+    .about-menu-a {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px
+    }
+    div ul li.menu-bar-li-about:hover ul.about-menu-ul {
+        display: block;
+        overflow: visible;
+        z-index: 10;
+   
+    }
+    .saylani-services-menu-ul {      
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+    }
+    .saylani-services-menu-li {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        list-style: none;
+    }
+    .education-menu-ul {
+        margin: 0px;
+        margin-top: -0.3vh;
+        padding: 0px;
+        list-style: none;
+        display: none;
+        position: fixed;
+        padding-left: 113px;
+    }
+    .education-menu-li-saylani-mass-training, .education-menu-li-saylani-incubator, .education-menu-li-green-house {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .saylani-mass-training-menu-ul {
+        margin: 0px;
+        margin-top: -0.4vh;
+        padding: 0px;
+        list-style: none;
+        display: none;
+        position: fixed;
+        padding-left: 10px;
+    }
+    .saylani-mass-training-menu-li-smit-programs, .saylani-mass-training-menu-li-faculty, .saylani-mass-training-menu-li-result, .saylani-mass-training-menu-li-entry-test-schedule {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .saylani-services-menu-a, .education-menu-a-saylani-mass-training, .saylani-mass-training-menu-a-smit-programs, .saylani-mass-training-menu-a-faculty, .saylani-mass-training-menu-a-result, .saylani-mass-training-menu-a-entry-test-schedule, .education-menu-a-saylani-incubator, .education-menu-a-green-house {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    div ul li.menu-bar-li-saylaniservices:hover ul.saylani-services-menu-ul {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+    }
+    li.saylani-services-menu-li:hover ul.education-menu-ul {
+        display: inline-block;
+        overflow: visible;
+        z-index: 1;
+    }
+    li.education-menu-li-saylani-mass-training:hover ul.saylani-mass-training-menu-ul {
+        display: inline-block;
+        overflow: visible;
+        z-index: 1;
+    }
+    .future-projects-menu-ul {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+        position: absolute;
+    }
+    .future-programs-menu-li {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .future-programs-menu-a, .menu-bar-li-futureprojects {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    li.menu-bar-li-futureprojects:hover ul.future-projects-menu-ul {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+    }
+    .donations-menu-ul {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 6vh;
+        list-style: none;
+        display: none;
+        position: absolute;
+    }
+    .donations-menu-li {
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #FFE4E1;
+        border-top: 2px solid #f5002d;
+        min-width: 11vw;
+        list-style: none;
+    }
+    .donations-menu-a, .menu-bar-a-donations {
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    li.menu-bar-li-donations:hover ul.donations-menu-ul {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+    }
+
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.menu-bar-div-logo-sb, .menu-bar-ul-logo-sb, .menu-bar-img-logo-sb {
+    display: auto;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+}
+.menu-bar-img-logo-sb {
+    width: 50%;
+    height: 100%;
+}
+.menu-bar-div-home-sb, .menu-bar-ul-home-sb, .menu-bar-li-home-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-about-sb, .menu-bar-ul-about-sb, .menu-bar-li-about-sb {
+    display: block;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-saylaniservices-sb, .menu-bar-ul-saylaniservices-sb, .menu-bar-li-saylaniservices-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-futureprojects-sb, .menu-bar-ul-futureprojects-sb, .menu-bar-li-futureprojects-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-media-sb, .menu-bar-ul-media-sb, .menu-bar-li-media-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-news-sb, .menu-bar-ul-news-sb, .menu-bar-li-news-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.menu-bar-div-donations-sb, .menu-bar-ul-donations-sb, .menu-bar-li-donations-sb {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 1vw;
+}
+.about-menu-ul-sb {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    line-height: 6vh;
+    list-style: none;
+    display: none;
+}
+.about-menu-li-sb {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 20px;
+    background-color: #FFE4E1;
+    border-top: 2px solid #f5002d;
+    list-style: none;
+}
+.about-menu-a-sb {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+div ul li.menu-bar-li-about-sb:hover ul.about-menu-ul-sb {
+    display: block;
+    overflow: visible;
+}
+.saylani-services-menu-ul-sb {
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    list-style: none;
+    display: none;
+    padding-top: 20px;
+}
+.saylani-services-menu-li-sb {
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: #FFE4E1;
+    border-top: 2px solid #f5002d;
+    list-style: none;
+}
+.education-menu-ul-sb {
+    margin: 0px;
+    margin-top: -0.3vh;
+    padding: 0px;
+    list-style: none;
+    display: none;
+}
+.education-menu-li-saylani-mass-training-sb, .education-menu-li-saylani-incubator-sb, .education-menu-li-green-house-sb {
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: #FFE4E1;
+    border-top: 2px solid #f5002d;
+    background-color: #FFE299;
+    border-radius: 10px;
+    min-width: 11vw;
+    list-style: none;
+}
+.saylani-mass-training-menu-ul-sb {
+    margin: 0px;
+    margin-top: -0.4vh;
+    padding: 0px;
+    list-style: none;
+    display: none;
+}
+.saylani-mass-training-menu-li-smit-programs-sb, .saylani-mass-training-menu-li-faculty-sb, .saylani-mass-training-menu-li-result-sb, .saylani-mass-training-menu-li-entry-test-schedule-sb {
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: #FFE4E1;
+    border-top: 2px solid darkcyan;
+    background-color: #CCEDFF;
+    border-radius: 10px;
+    min-width: 11vw;
+    list-style: none;
+}
+.saylani-services-menu-a-sb, .education-menu-a-saylani-mass-training-sb, .saylani-mass-training-menu-a-smit-programs-sb, .saylani-mass-training-menu-a-faculty-sb-sb, .saylani-mass-training-menu-a-result-sb, .saylani-mass-training-menu-a-entry-test-schedule-sb, .education-menu-a-saylani-incubator-sb, .education-menu-a-green-house-sb {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+div ul li.menu-bar-li-saylaniservices-sb:hover ul.saylani-services-menu-ul-sb {
+    display: block;
+}
+li.saylani-services-menu-li-sb:hover ul.education-menu-ul-sb {
+    display: inline;
+}
+li.education-menu-li-saylani-mass-training-sb:hover ul.saylani-mass-training-menu-ul-sb {
+    display: inline;
+}
+.future-projects-menu-ul-sb {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    line-height: 6vh;
+    list-style: none;
+    display: none;
+}
+.future-programs-menu-li-sb {
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: #FFE4E1;
+    border-top: 2px solid crimson; min-width: 11vw;
+    list-style: none;
+}
+.future-programs-menu-a-sb, .menu-bar-li-futureprojects-sb {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+li.menu-bar-li-futureprojects-sb:hover ul.future-projects-menu-ul-sb {
+    display: block;
+    overflow: visible;
+    z-index: 1;
+}
+.donations-menu-ul-sb {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    line-height: 6vh;
+    list-style: none;
+    display: none;
+}
+.donations-menu-li-sb {
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: #FFE4E1;
+    border-top: 2px solid #f5002d;
+    min-width: 11vw;
+    list-style: none;
+}
+.donations-menu-a-sb, .menu-bar-a-donations-sb {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+li.menu-bar-li-donations-sb:hover ul.donations-menu-ul-sb {
+    display: block;
+    overflow: visible;
+    z-index: 1;
+}
+</style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block" style="display:none; line-height: 8vh;" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+
+        <div class="homepage-div-first-row-grid-sb" id="homepage-div-first-row-grid-sb">
+            <div class="menu-bar-div-logo-sb">
+                <ul class="menu-bar-ul-logo-sb">
+                    <img class="menu-bar-img-logo-sb"
+                        src="https://www.saylaniwelfare.com/public_html/images/saylani/Saylani-logo.png">
+                </ul>
+
+            </div>
+            <div class="menu-bar-div-home-sb">
+                <ul class="menu-bar-ul-home-sb">
+                    <li class="menu-bar-li-home-sb">Home</li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-about-sb">
+                <ul class="menu-bar-ul-about-sb">
+                    <li class="menu-bar-li-about-sb">About
+                        <ul class="about-menu-ul-sb">
+                            <li class="about-menu-li-sb" id="about-menu-li-introduction-sb"><a class="about-menu-a-sb"
+                                    id="about-menu-li-introduction-sb"
+                                    href="http://www.saylaniwelfare.com/Introduction">Introduction</a></li>
+                            <li class="about-menu-li-sb" id="about-menu-li-chairman-message"><a class="about-menu-a-sb"
+                                    id="about-menu-li-chairman-message-sb"
+                                    href="http://www.saylaniwelfare.com/Chairman-Message">Chairman Message</a></li>
+                            <li class="about-menu-li-sb" id="about-menu-li-saylani-annual-report-sb"><a
+                                    class="about-menu-a-sb" id="about-menu-li-saylani-annual-report-sb"
+                                    href="http://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani Annual Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-saylaniservices-sb">
+                <ul class="menu-bar-ul-saylaniservices-sb">
+                    <li class="menu-bar-li-saylaniservices-sb">Saylani Services
+                        <ul class="saylani-services-menu-ul-sb">
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="#">Education</a>
+                                <ul class="education-menu-ul-sb">
+                                    <li class="education-menu-li-saylani-mass-training-sb"><a
+                                            class="education-menu-a-saylani-mass-training-sb" href="#">Saylani Mass
+                                            Training
+                                        </a>
+                                        <ul class="saylani-mass-training-menu-ul-sb">
+                                            <li class="saylani-mass-training-menu-li-smit-programs-sb"><a
+                                                    class="saylani-mass-training-menu-a-smit-programs-sb"
+                                                    href="http://www.saylaniwelfare.com/SMIT-Programs-sb">SMIT
+                                                    Programs</a>
+                                            </li>
+                                            <li class="saylani-mass-training-menu-li-faculty-sb"><a
+                                                    class="saylani-mass-training-menu-a-faculty-sb"
+                                                    href="http://www.saylaniwelfare.com/faculty-sb">Faculty</a></li>
+                                            <li class="saylani-mass-training-menu-li-result-sb"><a
+                                                    class="saylani-mass-training-menu-a-result-sb"
+                                                    href="http://www.saylaniwelfare.com/result-sb">Result</a></li>
+                                            <li class="saylani-mass-training-menu-li-entry-test-schedule-sb"><a
+                                                    class="saylani-mass-training-menu-a-entry-test-schedule-sb"
+                                                    href="http://www.saylaniwelfare.com/Entry-Test-Schedule-sb">Entry
+                                                    Test
+                                                    Schedule</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="education-menu-li-saylani-incubator-sb"><a
+                                            class="education-menu-a-saylani-incubator-sb" href="#">Saylani Incubator</a>
+                                    </li>
+                                    <li class="education-menu-li-green-house-sb"><a
+                                            class="education-menu-a-green-house-sb" href="#">Green House</a></li>
+                                </ul>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="#">Medical</a>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="#">Welfare</a>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Hajj-Application-Form">Hajj Application Form</a>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Saylani-Dastarkhwan">Saylani Dastarkhuwan</a>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Saylani-RO-Plant">Saylani RO Plant</a></li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Online-Sadqah">Online Sadqah</a></li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Online-Taweezat-Istikhara">Online
+                                    Taweezat/Istikhara</a>
+                            </li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Saylani-Job-Bank">Saylani Job Bank</a></li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="#">Online Quran
+                                    Academy</a></li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Books">Books</a></li>
+                            <li class="saylani-services-menu-li-sb"><a class="saylani-services-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Masajid-Online-Admission-Form">Saylani Online
+                                    Masjid</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-futureprojects-sb">
+                <ul class="menu-bar-ul-futureprojects-sb">
+                    <li class="menu-bar-li-futureprojects-sb"><a class="menu-bar-li-futureprojects-sb" href="#">Future
+                            Projects</a>
+                        <ul class="future-projects-menu-ul-sb">
+                            <li class="future-programs-menu-li-sb"><a class="future-programs-menu-a-sb" href="#">Saylani
+                                    University</a></li>
+                            <li class="future-programs-menu-li-sb"><a class="future-programs-menu-a-sb" href="#">Saylani
+                                    City</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-media-sb">
+                <ul class="menu-bar-ul-media-sb">
+                    <li class="menu-bar-li-media-sb">Media</li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-news-sb">
+                <ul class="menu-bar-ul-news-sb">
+                    <li class="menu-bar-li-news-sb">News</li>
+                </ul>
+            </div>
+
+            <div class="menu-bar-div-donations-sb">
+                <ul class="menu-bar-ul-donations-sb">
+                    <li class="menu-bar-li-donations-sb"><a class="menu-bar-a-donations-sb" href="#">Donations</a>
+                        <ul class="donations-menu-ul-sb">
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a-sb"
+                                    href="http://www.saylaniwelfare.com/Bank-Detail">Bank Details</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a"
+                                    href="http://www.saylaniwelfare.com/Sadqa">Sadqa</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a"
+                                    href="http://www.saylaniwelfare.com/Aqiqa">Aqiqa</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a"
+                                    href="http://www.saylaniwelfare.com/Donation">Other Donations</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a"
+                                    href="http://www.saylaniwelfare.com/Corona-Effecties">Corona Effecties</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a" href="#">Ramazaz-2020</a></li>
+                            <li class="donations-menu-li-sb"><a class="donations-menu-a"
+                                    href="http://www.saylaniwelfare.com/Contact-Us">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="menu-button" class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    </div>
+
+
+    <div class="maindiv1" style="margin: 0px;">
+
+        <div class="headerlistcomponentsdiv" style="display: inline-block; margin: 0px; padding-bottom: 0px;">
+            <ul class="headerlistul"
+                style="display:inline-block; text-align: center; padding: 0px; padding-top: 2vh; margin: 0px;">
+                <li class="headerlistcomponents"><a href="https://www.facebook.com/saylaniwelfare/" target="top"><i
+                            class="fa fa-facebook-official" style="font: size 36px;color:white"></i></a></li>
+                <li class="headerlistcomponents"><a href="https://twitter.com/OfficialSwit" target="top"><i
+                            class="fa fa-twitter" style="font: size 36px;color:white"></i></a></li>
+                <li class="headerlistcomponents"><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage"
+                        target="top"><i class="fa fa-youtube" style="font: size 36px;color:white"></i></a></li>
+                <li class="headerlistcomponents"><a
+                        href="https://api.whatsapp.com/send?phone=923331201585&text=&source=&data=&app_absent="><i
+                            class="fa fa-whatsapp" style="font: size 36px;color:white"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="headertextdiv"
+            style="text-align: center; color: white; display: inline-block; padding-top: 1vh; margin: 0px;">
+            <span class="headertext"
+                style="text-align: center !important; margin-left: 10vmin; margin-right: 10vmin; vertical-align: middle;">Millions
+                of people's life has changed, millions more awaiting your donation</span>
+        </div>
+
+        <div class="headerboxesdiv1" style="display: inline-block; margin: 0px;">
+            <ul class="headerboxesul" style="display:inline-block; margin: 0px; padding: 0px; padding-top: 1vh;">
+                <li class="headerboxesli"><span class="headerboxes">UK Donors</span></li>
+                <li class="headerboxesli"><span class="headerboxes">Donate Now</span></li>
+                <li class="headerboxesli"><span class="headerboxes">SMIT Results</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="homepage-div-first-row-grid" id="homepage-div-first-row-grid">
+
+        <div class="menu-bar-div-logo">
+            <ul class="menu-bar-ul-logo">
+                <img class="menu-bar-img-logo"
+                    src="https://www.saylaniwelfare.com/public_html/images/saylani/Saylani-logo.png">
+            </ul>
+
+        </div>
+
+        <div class="menu-bar-div-home">
+            <ul class="menu-bar-ul-home">
+                <li class="menu-bar-li-home">Home</li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-about">
+            <ul class="menu-bar-ul-about">
+                <li class="menu-bar-li-about">About
+                    <ul class="about-menu-ul">
+                        <li class="about-menu-li" id="about-menu-li-introduction"><a class="about-menu-a"
+                                id="about-menu-li-introduction"
+                                href="http://www.saylaniwelfare.com/Introduction">Introduction</a></li>
+                        <li class="about-menu-li" id="about-menu-li-chairman-message"><a class="about-menu-a"
+                                id="about-menu-li-chairman-message"
+                                href="http://www.saylaniwelfare.com/Chairman-Message">Chairman Message</a></li>
+                        <li class="about-menu-li" id="about-menu-li-saylani-annual-report"><a class="about-menu-a"
+                                id="about-menu-li-saylani-annual-report" s
+                                href="http://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani Annual
+                                Report</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-saylaniservices">
+            <ul class="menu-bar-ul-saylaniservices">
+                <li class="menu-bar-li-saylaniservices">Saylani Services
+                    <ul class="saylani-services-menu-ul">
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a" href="#">Education</a>
+                            <ul class="education-menu-ul">
+                                <li class="education-menu-li-saylani-mass-training"><a
+                                        class="education-menu-a-saylani-mass-training" href="#">Saylani Mass
+                                        Training
+                                    </a>
+                                    <ul class="saylani-mass-training-menu-ul">
+                                        <li class="saylani-mass-training-menu-li-smit-programs"><a
+                                                class="saylani-mass-training-menu-a-smit-programs"
+                                                href="http://www.saylaniwelfare.com/SMIT-Programs">SMIT
+                                                Programs</a>
+                                        </li>
+                                        <li class="saylani-mass-training-menu-li-faculty"><a
+                                                class="saylani-mass-training-menu-a-faculty"
+                                                href="http://www.saylaniwelfare.com/faculty">Faculty</a></li>
+                                        <li class="saylani-mass-training-menu-li-result"><a
+                                                class="saylani-mass-training-menu-a-result"
+                                                href="http://www.saylaniwelfare.com/result">Result</a></li>
+                                        <li class="saylani-mass-training-menu-li-entry-test-schedule"><a
+                                                class="saylani-mass-training-menu-a-entry-test-schedule"
+                                                href="http://www.saylaniwelfare.com/Entry-Test-Schedule">Entry
+                                                Test
+                                                Schedule</a></li>
+                                    </ul>
+                                </li>
+                                <li class="education-menu-li-saylani-incubator"><a
+                                        class="education-menu-a-saylani-incubator" href="#">Saylani
+                                        Incubator</a>
+                                </li>
+                                <li class="education-menu-li-green-house"><a class="education-menu-a-green-house"
+                                        href="#">Green House</a></li>
+                            </ul>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a" href="#">Medical</a>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a" href="#">Welfare</a>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Hajj-Application-Form">Hajj Application
+                                Form</a>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Saylani-Dastarkhwan">Saylani
+                                Dastarkhuwan</a>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Saylani-RO-Plant">Saylani RO Plant</a></li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Online-Sadqah">Online Sadqah</a></li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Online-Taweezat-Istikhara">Online
+                                Taweezat/Istikhara</a>
+                        </li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Saylani-Job-Bank">Saylani Job Bank</a></li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a" href="#">Online
+                                Quran
+                                Academy</a></li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Books">Books</a></li>
+                        <li class="saylani-services-menu-li"><a class="saylani-services-menu-a"
+                                href="http://www.saylaniwelfare.com/Masajid-Online-Admission-Form">Saylani
+                                Online
+                                Masjid</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-futureprojects">
+            <ul class="menu-bar-ul-futureprojects">
+                <li class="menu-bar-li-futureprojects"><a class="menu-bar-li-futureprojects" href="#">Future
+                        Projects</a>
+                    <ul class="future-projects-menu-ul">
+                        <li class="future-programs-menu-li"><a class="future-programs-menu-a" href="#">Saylani
+                                University</a></li>
+                        <li class="future-programs-menu-li"><a class="future-programs-menu-a" href="#">Saylani
+                                City</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-media">
+            <ul class="menu-bar-ul-media">
+                <li class="menu-bar-li-media">Media</li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-news">
+            <ul class="menu-bar-ul-news">
+                <li class="menu-bar-li-news">News</li>
+            </ul>
+        </div>
+
+        <div class="menu-bar-div-donations">
+            <ul class="menu-bar-ul-donations">
+                <li class="menu-bar-li-donations"><a class="menu-bar-a-donations" href="#">Donations</a>
+                    <ul class="donations-menu-ul">
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Bank-Detail">Bank Details</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Sadqa">Sadqa</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Aqiqa">Aqiqa</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Donation">Other Donations</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Corona-Effecties">Corona Effecties</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a" href="#">Ramazaz-2020</a></li>
+                        <li class="donations-menu-li"><a class="donations-menu-a"
+                                href="http://www.saylaniwelfare.com/Contact-Us">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators" style="z-index: 0;">
+            <li data-target="#demo" data-slide-to="0" class="active" style="background-color: crimson;"></li>
+            <li data-target="#demo" data-slide-to="1" style="background-color: crimson;"></li>
+            <li data-target="#demo" data-slide-to="2" style="background-color: crimson;"></li>
+            <li data-target="#demo" data-slide-to="3" style="background-color: crimson"></li>
+            <li data-target="#demo" data-slide-to="4" style="background-color: crimson;"></li>
+            <li data-target="#demo" data-slide-to="5" style="background-color: crimson;"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"> <img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/Banner.jpeg"></ul>
+            </div>
+            <div class="carousel-item">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/Corona%20Banner.jpeg">
+                </ul>
+            </div>
+            <div class="carousel-item">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/slider1.png"></ul>
+            </div>
+            <div class="carousel-item">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/ehsaas&saylani.jpeg"></ul>
+            </div>
+            <div class="carousel-item">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/BloodBank_Slider.jpg">
+                </ul>
+            </div>
+            <div class="carousel-item">
+                <ul style="list-style: none; margin: 0px; padding: 0px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/RotiBank_Slider.jpg"></ul>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"
+                style="background-color: crimson; border-radius: 20px; padding: 20px;"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            </li><span class="carousel-control-next-icon"
+                style="background-color:crimson; border-radius: 20px;  padding: 20px;"></span>
+        </a>
+    </div>
+
+    <div class="news-feed-div-main" style="width: 90%; margin: auto; justify-content: center;">
+        <marquee behavior="" direction="left;" style="background-color: steelblue;">
+            <span class="news-feed-span-green-font" style="color: springgreen; padding-right: 20px;">(News-1
+                Dated:15-06-2019)</span>
+            <span class="news-feed-span-white-font" style="color: white; padding-right: 30px;">PIAIC Next Phase
+                Admission in Islamabad And Faisalabad" . More Details </span>
+            <span class="news-feed-span-green-font" style="color: springgreen; padding-right: 20px;">(News-2
+                Dated:15-05-2019)</span>
+            <span class="news-feed-span-white-font" style="color: white; padding-right: 30px;"> Saylani Welfare
+                Announced "Donation Application" . More Details </span>
+            <span class="news-feed-span-green-font" style="color: springgreen; padding-right: 20px;">(News-3
+                Dated:07-05-2019)</span>
+            <span class="news-feed-span-white-font" style="color: white; padding-right: 30px;">Alhamdulillah
+                Saylani
+                Organized 200+ Locations For Iftar And Sehri In This Holy Month . More Details </span>
+            <span class="news-feed-span-green-font" style="color: springgreen;padding-right: 20px;"> (News-4
+                Dated:08-03-2019)</span>
+            <span class="news-feed-span-white-font" style="color: white; padding-right: 30px;"> Saylani Welfare
+                Distributing Ration & Clothes to affected people of Balochistan. More Details (News-5
+                Dated:25-02-2019)
+                PIAIC Entrance Exam Merit Ranking List Announced. More Details (News-6 Dated:23-02-2019)
+                President
+                of
+                Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. More
+                Details
+                (News-7 Dated:19-02-2019) Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir
+                Visit
+                Saylani Welfare International Trust, Saylani Mass I.T. Training. More Details</span>
+            </span>
+        </marquee>
+    </div>
+
+    <div class="introduction-div-main-div">
+        <div class="introduction-heading">
+            <h2 style="text-align: center; color: #316DC3; font-weight: 600;">INTRO<span
+                    style="color:#427900 !important;;">DUCTION</span> </h2>
+        </div>
+        <div class="w3-container w3-center w3-animate-left" style="margin: 0% 10%;">
+            <p style="text-align:justify;">Established in May 1999 by famous spiritual and religious scholar
+                Maulana
+                Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of
+                breaking
+                the
+                cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live
+                a
+                dignified life and spreading happiness.</p>
+            <p style="text-align: justify;">We are an organization that believes in lighting up the lives of
+                underprivileged people across the
+                world.We endeavor to provide the best quality services in areas including food, education,
+                medical
+                and
+                social
+                welfare free of cost to people living in the dark. With over 60 different sectors, we feed
+                thousands
+                of
+                hungry people each day, hundreds more are given the hope of life through medical health care,
+                many
+                are
+                educated to become leaders of tomorrow and several are given the opportunity to stand on their
+                feet
+                financially.</p>
+            <p style="text-align: justify">Today, we are proud to say that our physical presence extends
+                throughout
+                Pakistan with a vast network
+                of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi,
+                Hyderabad
+                and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well.
+                Our
+                worldwide branches are operating under the guidance of a team of over 2,000 working
+                professionals
+                who
+                help almost 125,000 people on a daily basis.</p>
+            <p style="text-align: justify;">We strongly believe that a little help goes a long way and our work
+                would
+                not be possible without the
+                generous support of our valuable donors. Our local and international donors have graciously lent
+                us
+                a
+                hand by supporting our causes and enabling us to serve the needs of people in need.</p><br><br>
+        </div>
+    </div>
+
+    <div class="flex-container "
+        style=" font-family:serif; margin-bottom: 10px;margin:auto;padding:40px 00px; display: flex; background-color: #316DC3; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+        <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_food_png.png"
+                style="height: 40px;">
+            <h2 style="font-size: 8vmin; font-weight: 600; color: white;">125، 000</h2>
+            <h5 style="font-weight: 600; color: white;">DAILY DASTRAKHAN <span
+                    style=" font-weight: 600; color: rgb(0, 255, 0);">(MONTHLY)</span></h5>
+        </div>
+        <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_family_png.png"
+                style="height: 40px;">
+            <h2 style="font-size: 8vmin; font-weight: 600; color: white;">7,500</h2>
+            <h5 style="font-weight: 600; color: white;">FAMILY ADOPTION <span
+                    style=" font-weight: 600; color: rgb(0, 255, 0);">(MONTHLY)</span></h5>
+        </div>
+        <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_medical_png.png"
+                style="height: 40px;">
+            <h2 style="font-size: 8vmin; font-weight: 600; color: white;">43,749</h2>
+            <h5 style="font-weight: 600; color: white;">MEDICAL <span
+                    style=" font-weight: 600; color:rgb(0, 255, 0);">(MONTHLY)</span></h5>
+        </div>
+        <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_education_png.png"
+                style="height: 40px;">
+            <h2 style="font-size: 8vmin; font-weight: 600; color: white;">180,000</h2>
+            <h5 style="font-weight: 600; color: white;">EDUCATION <span
+                    style=" font-weight: 600; color:rgb(0, 255, 0);">(MONTHLY)</span></h5>
+        </div>
+    </div>
+
+    <div>
+        <div style="text-align: center; margin-top: 20px;">
+            <h2 style="color: #316DC3; display:inline;text-align: center;">WHAT WE <span
+                    style="color:#427900 !important ;">ARE DOING?</span></h2>
+        </div>
+
+        <div class="what-we-do flex-container"
+            style="margin: 10px auto; display: flex; background-color: white; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/onlinesadqah.png" width="70"
+                        alt="">
+                    <h4 class="font-weight-600 mt-20">ONLINE SADQAH</h4>
+                </h5>
+            </div>
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/welfare.png" width="70"
+                        alt="">
+                    <h4>WELFARE</h4>
+                </h5>
+            </div>
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/medical.png" width="70"
+                        alt="">
+                    <h4>MEDICAL</h4>
+                </h5>
+            </div>
+
+        </div>
+
+        <div class="what-we-do flex-container"
+            style="margin: 10px auto; width:90%; display: flex; background-color: white; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/Dastarkhwan.png" width="70"
+                        alt="">
+                    <h4>DASTARKHWAN</h4>
+                </h5>
+            </div>
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/ROPLANT.png" width="70"
+                        alt="">
+                    <h4>RO PLANT</h4>
+                </h5>
+            </div>
+            <div class="what-we-do-sub-div" style="padding: 10px 50px; min-width: 20vw;">
+                <h5 style="margin: 0px; padding: 20px;"><img
+                        src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/education.png" width="70"
+                        alt="">
+                    <h4>EDUCATION</h4>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="upcoming-projects-div" style="width: 67%; color: #316DC3;  display:inline-block;  float: left;">
+        <h3 class="mission-and-upcoming-projects-heading"
+            style="color: #316DC3; padding-left: 20px; font-weight: 600; text-align: center;">MISSION AND
+            UPCOMING PROJECTS</h3>
+        <div class="mission-and-upcoming-projects-menu-div flex-container"
+            style=" margin: 10px auto; width:90%; display: flex; background-color: white; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+            <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/Hepatitis.png">
+                <h5 style="font-weight: 600;">HEPATITIS</h5>
+            </div>
+            <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/housing.png">
+                <h5 style="font-weight: 600;">HOUSING SOCIETY</h5>
+            </div>
+        </div>
+
+        <div class="mission-and-upcoming-projects-menu-div flex-container"
+            style="margin: 10px auto; width:90%; display: flex; background-color: white; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+            <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/IT.png">
+                <h5 style="font-weight: 600;">IT LITERACY</h5>
+            </div>
+            <div><img src="http://www.saylaniwelfare.com/public_html/images/saylani/icons/tharparkar.png">>
+                <h5 style="font-weight: 600;">THARPARKAR</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="upcoming-events-div" style="width: 33%; display:inline-block;">
+        <div>
+            <h3 style="font-weight: 600; color: #316DC3;text-align:justify; display: inline; padding: 5px;">Upcoming
+                Events</h3>
+            <p>
+
+                <marquee direction="up" width="250" height="200" scrollamount="2" onmouseover="this.stop();"
+                    onmouseout="this.start();" style="text-align: justify">
+                    Saylani Welfare Distributing Ration &amp; Clothes to affected people of Balochistan .<a
+                        href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R"
+                        style="color: blue">More Details</a> <br><br>
+                    Entry Test Accouncement (Graphic Designing &amp; Video Editing/Animation Course) On Sunday 3rd
+                    March 2019 @ 11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice
+                    Bahadurabad .<a
+                        href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3152781434747778/?type=3&amp;theater>"
+                        style="color: blue">More Details</a> <br><br>
+                    Dr Jamil Ahmed (Additional Inspector General of Police) &amp; Atiqmir Visit Saylani Welfare
+                    International Trust, Saylani Mass I.T. Training .<a
+                        href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&amp;__tn__=-R>"
+                        style="color: blue">More Details</a> <br><br>
+                    PIAIC Entrance Exam Merit Ranking List Announced.<a href="http://www.saylaniwelfare.com/result"
+                        style="color: blue">More Details</a> <br><br> President of Pakistan (Dr. Arif Alvi) Visited
+                    Saylani Welfare International Trust HeadOffice Karachi. <a
+                        href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw&amp;__tn__=-R>"
+                        style="color: blue">More Details</a>
+                </marquee>
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div class="image-gallery-heading" style="margin: auto; text-align: center; margin-top: 90px !important;">
+        <h2 style="color: #316DC3; font-family: 'Merriweather', serif; font-weight: 600;">Image<span
+                style="color: #427900 !important;">Gallery</span></h2>
+    </div>
+    <div class="image-gallery flex-container"
+        style=" margin: 10px auto; width:90%; display: flex; background-color: white; flex-wrap: wrap; justify-content: center; align-items:center; align-content: space-between;">
+        <img alt="project" src="http://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg"
+            class="img-fullwidth">
+        <img alt="project" src="http://www.saylaniwelfare.com/public_html/images/saylani/gallery/food.jpg"
+            class="img-fullwidth">
+        <img alt="project" src="http://www.saylaniwelfare.com/public_html/images/saylani/gallery/hazrat.jpg"
+            class="img-fullwidth">
+        <img alt="project" src="http://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg"
+            class="img-fullwidth">
+        <img alt="project" src="http://www.saylaniwelfare.com/public_html/images/saylani/gallery/hazrat2.jpg"
+            class="img-fullwidth">
+    </div>
+
+    <div class="footer flex-container"
+        style="margin: 10px auto; display: flex; background-color: rgb(37, 39, 46)!important; color: white; flex-wrap: wrap;justify-content: center; align-content: space-around;">
+        <div style="line-height: 20px; font-size: 12px; text-align: left; padding: 10px; min-width: 300px">
+            <span>Head Office,</span><br>
+            <span>A-25, Bahadurabad Chowrangi Karachi, Pakistan</span><br>
+            <span>UAN: 111-729-526 </span><span> (+0092-213) 4130786-90</span><br>
+            <span>CELL: 92-311-1729526</span><br>
+            <span>USA NO +1(716)941 7792</span><br>
+            <span>UK NO (+44)115 970 6256</span><br>
+            <span>info@saylaniwelfare.com</span>
+        </div>
+        <div style="font-weight: 600; padding: 10px;">Useful Links</div>
+        <div style="font-weight: 600; padding: 10px;">Connect With Us
+            <div class="headerlistcomponentsdiv" style="display: inline-block; margin: 0px; padding-bottom: 0px;">
+                <ul class="headerlistul"
+                    style="display:inline-block; text-align: center; padding: 0px; padding-top: 2vh; margin: 0px;">
+                    <li class="headerlistcomponents"><a href="https://www.facebook.com/saylaniwelfare/" target="top"><i
+                                class="fa fa-facebook-official" style="font: size 36px;color:white"></i></a></li>
+                    <li class="headerlistcomponents"><a href="https://twitter.com/OfficialSwit" target="top"><i
+                                class="fa fa-twitter" style="font: size 36px;color:white"></i></a></li>
+                    <li class="headerlistcomponents"><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage"
+                            target="top"><i class="fa fa-youtube" style="font: size 36px;color:white"></i></a></li>
+                    <li class="headerlistcomponents"><a
+                            href="https://api.whatsapp.com/send?phone=923331201585&text=&source=&data=&app_absent="><i
+                                class="fa fa-whatsapp" style="font: size 36px;color:white"></i></a></li>
+                </ul>
+            </div></div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
